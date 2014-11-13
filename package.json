@@ -1,0 +1,28 @@
+{
+    "name": "nodebb-theme-llamamal",
+    "version": "0.0.1",
+    "description": "Llamamall Theme for NodeBB",
+    "main": "theme.less",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rahilwazir/nodebb-theme-llamamal"
+    },
+    "keywords": [
+        "nodebb",
+        "llamamall",
+        "theme",
+        "themes"
+    ],
+    "author": {
+        "name": "rahilwazir",
+        "email": "rahilwazir@hotmail.com"
+    },
+    "license": "BSD-2-Clause",
+    "bugs": {
+        "url": "https://github.com/rahilwazir/nodebb-theme-llamamal/issues"
+    },
+    "peerDependencies": {
+        "nodebb-theme-lavender": "*"
+    },
+    "homepage": "https://github.com/rahilwazir/nodebb-theme-llamamal"
+}

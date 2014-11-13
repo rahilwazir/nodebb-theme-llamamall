@@ -1,0 +1,39 @@
+body {
+  background: #FFFFFF;
+}
+.home{
+  .category-icon {
+    margin-bottom: 10px;
+
+    > a {
+      padding: 0;
+      .category-header {
+        margin-bottom: 0;
+        height: 70px;
+        padding: 10px 0 0;
+        min-height: auto;
+
+        .badge {
+          top: 50px;
+          right: 0px;
+        }
+      }
+    }
+  }
+  .category-item {
+    .category-box {
+      margin: 0;
+      padding: 0;
+      height: 70px;
+
+      &:after, &:before {
+        content: "";
+        border: 0;
+      }
+
+      .category-info {
+        height: 100%;
+      }
+    }
+  }
+}
