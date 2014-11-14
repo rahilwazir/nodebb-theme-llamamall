@@ -1,8 +1,8 @@
 {
-    "id": "nodebb-theme-llamamal",
-    "name": "Llamamal Theme for NodeBB",
-    "description": "Llamamal Theme for NodeBB",
-    "url": "https://github.com/rahilwazir/nodebb-theme-llamamal",
+    "id": "nodebb-theme-llamamall",
+    "name": "Llamamall Theme for NodeBB",
+    "description": "Llamamall Theme for NodeBB",
+    "url": "https://github.com/rahilwazir/nodebb-theme-llamamall",
     "screenshot": null,
     "templates": "templates",
     "staticDir": "static"

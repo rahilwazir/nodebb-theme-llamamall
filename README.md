@@ -1,4 +1,4 @@
 Llamamall Theme for NodeBB
 ==========================
 
-Llamamal Theme for NodeBB
+Llamamall Theme for NodeBB
