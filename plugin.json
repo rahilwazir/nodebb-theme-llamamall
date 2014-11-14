@@ -1,0 +1,6 @@
+{
+    "id": "nodebb-theme-llamamall",
+    "scripts": [
+        "static/lib/llamamall.js"
+    ]
+}
