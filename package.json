@@ -1,6 +1,6 @@
 {
   "name": "nodebb-theme-llamamall",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Llamamall Theme for NodeBB",
   "main": "theme.less",
   "repository": {
