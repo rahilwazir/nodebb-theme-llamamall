@@ -7,11 +7,12 @@ body {
 
     > a {
       padding: 0;
+        @box-height: 70px;
       .category-header {
         margin-bottom: 0;
-        height: 70px;
         padding: 10px 0 0;
-        min-height: auto;
+        height: @box-height;
+        min-height: @box-height;
 
         .badge {
           top: 50px;
