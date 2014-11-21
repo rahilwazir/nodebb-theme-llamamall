@@ -13,12 +13,18 @@
     if (_llamamallForumHood) {
         var popNavi = function (_location, _action) {
             var uri = _location.url;
+            uri = $.trim(uri);
             var uriAgainst = _llamamallForumHood.uri;
 
-            if ($.trim(uri) && uri !== uriAgainst) {
+            // console.log(uri + ' !== ' + uriAgainst, RELATIVE_PATH);
+            if (uri && uri !== uriAgainst) {
                 uri = uri.replace(RELATIVE_PATH, '');
                 _llamamallForum.$scope.$apply(function () {
-                    _llamamallForum.$location.path(uri);
+                    // _llamamallForum.$location.path(uri, false);
+                });
+            } else {
+                _llamamallForum.$scope.$apply(function () {
+                    // _llamamallForum.$location.path(uriAgainst, false);
                 });
             }
         };
