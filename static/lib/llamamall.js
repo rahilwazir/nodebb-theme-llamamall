@@ -12,21 +12,19 @@
 
     if (_llamamallForumHood) {
         var popNavi = function (_location, _action) {
-            var uri = _location.url;
-            uri = $.trim(uri);
-            var uriAgainst = _llamamallForumHood.uri;
+            var forumURI = $.trim(_location.url),
+                _RELATIVE_PATH = RELATIVE_PATH.replace(/^\/+/g, ''),
+                mainURI = $.trim(_llamamallForumHood.uri);
 
-            // console.log(uri + ' !== ' + uriAgainst, RELATIVE_PATH);
-            if (uri && uri !== uriAgainst) {
-                uri = uri.replace(RELATIVE_PATH, '');
-                _llamamallForum.$scope.$apply(function () {
-                    // _llamamallForum.$location.path(uri, false);
-                });
-            } else {
-                _llamamallForum.$scope.$apply(function () {
-                    // _llamamallForum.$location.path(uriAgainst, false);
-                });
+            if (forumURI !== '' && forumURI.indexOf(_RELATIVE_PATH) < 0) {
+                forumURI = _RELATIVE_PATH + '/' + forumURI;
+            } else if (forumURI === '') {
+                forumURI = RELATIVE_PATH;
             }
+
+            _llamamallForum.$scope.$apply(function () {
+                _llamamallForum.$location.path(forumURI, false);
+            });
         };
 
         $(window).on('action:popstate', function (_action, _location) {
