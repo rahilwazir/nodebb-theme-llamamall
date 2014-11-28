@@ -1,6 +1,10 @@
 {
     "id": "nodebb-theme-llamamall",
+    "library": "./library.js",
     "scripts": [
         "static/lib/llamamall.js"
+    ],
+    "hooks": [
+        { "hook": "static:app.load", "method": "init" }
     ]
 }
