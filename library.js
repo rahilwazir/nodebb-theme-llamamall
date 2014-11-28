@@ -1,30 +1,25 @@
 (function(llamamall) {
 
-    var unmount = function (app, path) {
-        for (var i = 0, len = app.stack.length; i < len; ++i) {
-            if (app.stack[i].route && app.stack[i].route.path == path) {
-                app.stack.splice(i, 1);
-                return true;
-            };
-        }
-        return false;
-    };
+    var nconf = module.parent.require('nconf');
 
     llamamall.init = function(params, callback) {
         var app = params.router,
             middleware = params.middleware;
 
-        // unmount(app, '/login');
-
-        app.use(function(req) {
-            console.log(req.headers);
+        app.use(function(req, res, next) {
+            next();
         });
 
         app.get('/login', middleware.buildHeader, function(req, res) {
+            console.log('login');
             // res.redirect('/');
         });
 
         callback();
+    };
+
+    llamamall.authInit = function() {
+        nconf.set('relative_path', '/forum');
     };
 
 })(module.exports);

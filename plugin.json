@@ -5,6 +5,7 @@
         "static/lib/llamamall.js"
     ],
     "hooks": [
-        { "hook": "static:app.load", "method": "init" }
+        { "hook": "static:app.load", "method": "init" },
+        { "hook": "filter:auth.init", "method": "authInit" }
     ]
 }
