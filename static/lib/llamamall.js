@@ -37,7 +37,7 @@
 
         $(window).on('action:ajaxify.end', function () {
             _llamamallForum.$lScope.windowHeight = _llamamallForum.height = document.body.clientHeight + 'px';
-            _llamamallForum.$lScope.$digest();
+            _llamamallForum.$lScope.$apply();
         });
     }
 })(window);
