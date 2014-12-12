@@ -153,7 +153,22 @@
 					</li>
 				</ul>
 				<!-- ELSE -->
-
+				<ul id="logged-out-menu" class="nav navbar-nav navbar-right pull-right">
+					<!-- IF allowRegistration -->
+					<li>
+						<a href="/#!/signup" target="_top">
+							<i class="fa fa-pencil visible-xs-inline"></i>
+							<span>[[global:register]]</span>
+						</a>
+					</li>
+					<!-- ENDIF allowRegistration -->
+					<li>
+                        <a href="/#!/signin" target="_top">
+							<i class="fa fa-sign-in visible-xs-inline"></i>
+							<span>[[global:login]]</span>
+						</a>
+					</li>
+				</ul>
 				<!-- ENDIF loggedIn -->
 				<!-- IF searchEnabled -->
 				<ul class="nav navbar-nav navbar-right">
