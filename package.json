@@ -1,6 +1,6 @@
 {
   "name": "nodebb-theme-llamamall",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Llamamall Theme for NodeBB",
   "main": "theme.less",
   "repository": {
@@ -28,7 +28,7 @@
   "readme": "Llamamall Theme for NodeBB\n==========================\n\nLlamamall Theme for NodeBB",
   "readmeFilename": "README.md",
   "gitHead": "8ab36c8d23b580cb419aa7a38c97aace6b328a29",
-  "_id": "nodebb-theme-llamamall@0.0.3",
+  "_id": "nodebb-theme-llamamall@0.0.4",
   "scripts": {},
   "_shasum": "cb37a978f1e6c3745165af8a37929ba0e4f8fdc1",
   "_from": "nodebb-theme-llamamall@*"
