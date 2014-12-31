@@ -32,8 +32,25 @@
     });
 
     $(window).on('action:ajaxify.end', function () {
-        _llamamallForum.$lScope.windowHeight = _llamamallForum.height = document.body.clientHeight + 'px';
+        increaseHeight();
+
+    });
+
+    function increaseHeight(ph) {
+        ph = document.body.clientHeight + (ph || 0);
+        _llamamallForum.$lScope.windowHeight = _llamamallForum.height = ph + 'px';
         _llamamallForum.$lScope.$apply();
+    }
+
+    $(document).on('click', '#new_post, .post_reply', function() {
+        setTimeout(function() {
+            var composer = $('.composer');
+
+            if (composer.length < 1) return;
+
+            increaseHeight(200);
+            localStorage.setItem('composer:resizePercentage', 0.8);
+        }, 200);
     });
 
 })(window);
