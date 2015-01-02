@@ -5,6 +5,9 @@
     var _llamamallForumHood = w.top.llamamallForumHood;
 
     if (!_llamamallForumHood) {
+        if (location.pathname.indexOf(RELATIVE_PATH + '/admin') === -1) {
+            location.replace(location.origin + '/#!' + location.pathname);
+        }
         return false;
     }
 
@@ -33,7 +36,6 @@
 
     $(window).on('action:ajaxify.end', function () {
         increaseHeight();
-
     });
 
     function increaseHeight(ph) {
