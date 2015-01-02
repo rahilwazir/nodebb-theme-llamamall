@@ -1,6 +1,6 @@
 {
   "name": "nodebb-theme-llamamall",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "description": "Llamamall Theme for NodeBB",
   "main": "theme.less",
   "repository": {
@@ -25,11 +25,27 @@
     "nodebb-theme-lavender": "*"
   },
   "homepage": "https://github.com/rahilwazir/nodebb-theme-llamamall",
-  "readme": "Llamamall Theme for NodeBB\n==========================\n\nLlamamall Theme for NodeBB",
-  "readmeFilename": "README.md",
   "gitHead": "8ab36c8d23b580cb419aa7a38c97aace6b328a29",
-  "_id": "nodebb-theme-llamamall@0.0.4",
+  "_id": "nodebb-theme-llamamall@0.0.7",
   "scripts": {},
-  "_shasum": "08442ad103c2b9223459c674efdbaca7480e62b3",
-  "_from": "nodebb-theme-llamamall@"
+  "_shasum": "cd4cd776091aef10aeacf3486177d8d2c7b5ada9",
+  "_from": "nodebb-theme-llamamall@*",
+  "_npmVersion": "1.4.28",
+  "_npmUser": {
+    "name": "rahilwazir",
+    "email": "rahilwazir@hotmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "rahilwazir",
+      "email": "rahilwazir@hotmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "cd4cd776091aef10aeacf3486177d8d2c7b5ada9",
+    "tarball": "http://registry.npmjs.org/nodebb-theme-llamamall/-/nodebb-theme-llamamall-0.0.7.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/nodebb-theme-llamamall/-/nodebb-theme-llamamall-0.0.6.tgz",
+  "readme": "ERROR: No README data found!"
 }
