@@ -21,7 +21,7 @@
             forumURI = RELATIVE_PATH;
         }
 
-        _llamamallForum.$scope.$apply(function () {
+        _llamamallForum.$scope.$apply(function() {
             _llamamallForum.$location.path(forumURI);
         });
     };
@@ -36,7 +36,10 @@
 
     $(window).on('action:ajaxify.end', function () {
         increaseHeight();
+        topLinking();
     });
+
+    $(window).on('action:composer.posts.reply action:composer.posts.reply action:composer.posts.edit', topLinking);
 
     function increaseHeight(ph) {
         ph = document.body.clientHeight + (ph || 0);
@@ -54,5 +57,12 @@
             localStorage.setItem('composer:resizePercentage', 0.8);
         }, 200);
     });
+
+    function topLinking() {
+        var arr = $(document).find('.post-content a');
+        $.each(arr, function(i, v) {
+            $(v).attr('target', '_top');
+        });
+    }
 
 })(window);
